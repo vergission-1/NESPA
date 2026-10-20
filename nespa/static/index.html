@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nespa — Neo-Study-Partner</title><link rel="stylesheet" href="/static/style.css">
+<script src="/static/app.js" defer></script></head>
+<body><header><strong>nespa<span>.</span></strong><small>Neo-Study-Partner · v0.1</small></header>
+<main><h1>Think while <em>agents work.</em></h1><p>Independent conversation. Continuous work. Shared factual state.</p>
+<div class="panels"><section><div class="heading"><h2>Reception</h2><label>AVAILABLE</label></div>
+<div id="messages" class="messages"><article>你好！Worker 执行期间，你可以随时问进度、解释步骤，或记录一个新想法。</article></div>
+<form id="chat"><input id="prompt" maxlength="2000" placeholder="问问进度，或者记录灵感…" required><button>发送 ↗</button></form></section>
+<section><div class="heading"><h2>Worker</h2><label id="status">IDLE</label></div>
+<p>模拟执行过程，用来验证对话不会阻塞任务。本演示不会分析真实论文。</p>
+<div id="task-title">尚无任务</div><div class="progress"><div id="bar"></div></div>
+<small id="count">0 / 12</small><button id="start">开始模拟任务 ↗</button>
+<h3>任务事件</h3><div id="events" class="events">尚无记录</div></section></div>
+<section class="ideas"><h2>研究灵感</h2><p>灵感不会自动修改正在执行的工作。</p><div id="notes">暂无笔记</div></section>
+<footer>NESPA LAB · PROOF OF CONCEPT</footer></main></body></html>
