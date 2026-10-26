@@ -271,8 +271,8 @@ class KnowledgeEngine:
 
     async def watch(self, seconds: int = 10) -> None:
         while True:
+            await asyncio.sleep(seconds)
             try:
                 await asyncio.to_thread(self.sync)
             except Exception as exc:
                 self._last_error = f"{type(exc).__name__}: {exc}"
-            await asyncio.sleep(seconds)
